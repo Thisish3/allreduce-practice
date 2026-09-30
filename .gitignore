@@ -1,0 +1,4 @@
+test_allreduce
+bench_allreduce
+test_tsan
+*.dSYM/

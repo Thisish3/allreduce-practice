@@ -212,9 +212,9 @@ def main():
             (y.float() - ref.float()).abs().max() / ref.float().abs().max()).item(),
     }
     print(json.dumps({k: v for k, v in out["pipeline"].items() if k != "rows"}), flush=True)
+    shown = ("chunks", "ms", "pingpong_ms", "copies_first_ms", "query_ms", "ideal_ms")
     for r in rows_out:
-        print(json.dumps({k: r[k] for k in ("chunks", "ms", "pingpong_ms", "copies_first_ms", "query_ms", "ideal_ms")}),
-              flush=True)
+        print(json.dumps({k: r[k] for k in shown}), flush=True)
 
     os.makedirs("results", exist_ok=True)
     tag = out["gpu"].replace("NVIDIA GeForce ", "").replace(" ", "_").lower()

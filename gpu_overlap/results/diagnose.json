@@ -1,0 +1,54 @@
+{
+  "gpu": "NVIDIA GeForce RTX 3060 Ti",
+  "bytes": 268435456,
+  "cases": {
+    "pin_memory_alloc/default": {
+      "call_ms": 0.1,
+      "event_ms": 21.41,
+      "wall_ms": 21.64,
+      "event_gbps": 12.54
+    },
+    "pin_memory_alloc/side": {
+      "call_ms": 0.1,
+      "event_ms": 23.08,
+      "wall_ms": 23.38,
+      "event_gbps": 11.63
+    },
+    "dot_pin_memory/default": {
+      "call_ms": 0.08,
+      "event_ms": 22.1,
+      "wall_ms": 22.3,
+      "event_gbps": 12.15
+    },
+    "dot_pin_memory/side": {
+      "call_ms": 0.1,
+      "event_ms": 21.39,
+      "wall_ms": 21.66,
+      "event_gbps": 12.55
+    },
+    "pageable/default": {
+      "call_ms": 64.5,
+      "event_ms": 64.33,
+      "wall_ms": 64.71,
+      "event_gbps": 4.17
+    },
+    "pageable/side": {
+      "call_ms": 62.63,
+      "event_ms": 62.41,
+      "wall_ms": 62.89,
+      "event_gbps": 4.3
+    },
+    "fp16_2d_dot_pin_memory/default": {
+      "call_ms": 0.09,
+      "event_ms": 21.35,
+      "wall_ms": 21.55,
+      "event_gbps": 12.57
+    },
+    "fp16_2d_dot_pin_memory/side": {
+      "call_ms": 0.08,
+      "event_ms": 21.19,
+      "wall_ms": 21.39,
+      "event_gbps": 12.67
+    }
+  }
+}

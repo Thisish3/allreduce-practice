@@ -1,0 +1,314 @@
+{
+  "gpu": "NVIDIA GeForce RTX 3060 Ti",
+  "runs": 3,
+  "link": {
+    "pinned": {
+      "h2d_gbps": {
+        "median": 12.34,
+        "min": 11.14,
+        "max": 12.54,
+        "n": 3
+      },
+      "d2h_gbps": {
+        "median": 11.55,
+        "min": 10.24,
+        "max": 12.04,
+        "n": 3
+      }
+    },
+    "pageable": {
+      "h2d_gbps": {
+        "median": 6.44,
+        "min": 6.25,
+        "max": 6.62,
+        "n": 3
+      },
+      "d2h_gbps": {
+        "median": 4.1,
+        "min": 4.07,
+        "max": 4.21,
+        "n": 3
+      }
+    }
+  },
+  "two_streams": {
+    "pinned": {
+      "copy_ms": {
+        "median": 21.86,
+        "min": 21.63,
+        "max": 21.99,
+        "n": 3
+      },
+      "compute_ms": {
+        "median": 17.61,
+        "min": 17.53,
+        "max": 18.12,
+        "n": 3
+      },
+      "one_stream_ms": {
+        "median": 41.09,
+        "min": 40.48,
+        "max": 41.91,
+        "n": 3
+      },
+      "two_streams_ms": {
+        "median": 22.03,
+        "min": 21.99,
+        "max": 22.7,
+        "n": 3
+      },
+      "hidden_pct_of_shorter": {
+        "median": 108.5,
+        "min": 98.1,
+        "max": 113.3,
+        "n": 3
+      }
+    },
+    "pageable": {
+      "copy_ms": {
+        "median": 63.26,
+        "min": 62.38,
+        "max": 64.53,
+        "n": 3
+      },
+      "compute_ms": {
+        "median": 17.64,
+        "min": 17.54,
+        "max": 18.0,
+        "n": 3
+      },
+      "one_stream_ms": {
+        "median": 81.06,
+        "min": 80.78,
+        "max": 83.41,
+        "n": 3
+      },
+      "two_streams_ms": {
+        "median": 81.87,
+        "min": 80.92,
+        "max": 84.39,
+        "n": 3
+      },
+      "hidden_pct_of_shorter": {
+        "median": -5.6,
+        "min": -6.2,
+        "max": 0.8,
+        "n": 3
+      }
+    }
+  },
+  "pipeline": [
+    {
+      "chunks": 1,
+      "ms": {
+        "median": 57.82,
+        "min": 56.54,
+        "max": 58.08,
+        "n": 3
+      },
+      "pingpong_ms": {
+        "median": 59.03,
+        "min": 56.28,
+        "max": 61.88,
+        "n": 3
+      },
+      "copies_first_ms": {
+        "median": 58.32,
+        "min": 56.42,
+        "max": 67.27,
+        "n": 3
+      },
+      "query_ms": {
+        "median": 57.45,
+        "min": 56.62,
+        "max": 57.78,
+        "n": 3
+      },
+      "ideal_ms": {
+        "median": 56.94,
+        "min": 55.24,
+        "max": 57.54,
+        "n": 3
+      }
+    },
+    {
+      "chunks": 2,
+      "ms": {
+        "median": 57.72,
+        "min": 56.6,
+        "max": 57.82,
+        "n": 3
+      },
+      "pingpong_ms": {
+        "median": 57.57,
+        "min": 57.03,
+        "max": 58.08,
+        "n": 3
+      },
+      "copies_first_ms": {
+        "median": 57.79,
+        "min": 56.58,
+        "max": 57.82,
+        "n": 3
+      },
+      "query_ms": {
+        "median": 47.02,
+        "min": 45.92,
+        "max": 47.47,
+        "n": 3
+      },
+      "ideal_ms": {
+        "median": 46.16,
+        "min": 44.67,
+        "max": 46.48,
+        "n": 3
+      }
+    },
+    {
+      "chunks": 4,
+      "ms": {
+        "median": 57.57,
+        "min": 56.71,
+        "max": 58.26,
+        "n": 3
+      },
+      "pingpong_ms": {
+        "median": 57.69,
+        "min": 55.77,
+        "max": 58.38,
+        "n": 3
+      },
+      "copies_first_ms": {
+        "median": 57.51,
+        "min": 56.5,
+        "max": 58.17,
+        "n": 3
+      },
+      "query_ms": {
+        "median": 42.59,
+        "min": 41.7,
+        "max": 42.88,
+        "n": 3
+      },
+      "ideal_ms": {
+        "median": 40.77,
+        "min": 39.39,
+        "max": 40.94,
+        "n": 3
+      }
+    },
+    {
+      "chunks": 8,
+      "ms": {
+        "median": 59.78,
+        "min": 58.44,
+        "max": 59.86,
+        "n": 3
+      },
+      "pingpong_ms": {
+        "median": 59.42,
+        "min": 57.04,
+        "max": 59.55,
+        "n": 3
+      },
+      "copies_first_ms": {
+        "median": 59.14,
+        "min": 59.01,
+        "max": 59.25,
+        "n": 3
+      },
+      "query_ms": {
+        "median": 40.72,
+        "min": 40.17,
+        "max": 42.12,
+        "n": 3
+      },
+      "ideal_ms": {
+        "median": 38.07,
+        "min": 36.75,
+        "max": 38.18,
+        "n": 3
+      }
+    },
+    {
+      "chunks": 16,
+      "ms": {
+        "median": 56.2,
+        "min": 55.34,
+        "max": 56.47,
+        "n": 3
+      },
+      "pingpong_ms": {
+        "median": 57.75,
+        "min": 57.24,
+        "max": 57.83,
+        "n": 3
+      },
+      "copies_first_ms": {
+        "median": 59.8,
+        "min": 58.86,
+        "max": 60.28,
+        "n": 3
+      },
+      "query_ms": {
+        "median": 40.4,
+        "min": 38.24,
+        "max": 40.4,
+        "n": 3
+      },
+      "ideal_ms": {
+        "median": 36.73,
+        "min": 35.43,
+        "max": 36.8,
+        "n": 3
+      }
+    },
+    {
+      "chunks": 32,
+      "ms": {
+        "median": 50.48,
+        "min": 49.61,
+        "max": 51.19,
+        "n": 3
+      },
+      "pingpong_ms": {
+        "median": 65.07,
+        "min": 64.74,
+        "max": 65.89,
+        "n": 3
+      },
+      "copies_first_ms": {
+        "median": 65.01,
+        "min": 63.36,
+        "max": 65.21,
+        "n": 3
+      },
+      "query_ms": {
+        "median": 43.77,
+        "min": 42.35,
+        "max": 43.88,
+        "n": 3
+      },
+      "ideal_ms": {
+        "median": 36.05,
+        "min": 34.77,
+        "max": 36.1,
+        "n": 3
+      }
+    }
+  ],
+  "pipeline_parts": {
+    "copy_ms": {
+      "median": 21.56,
+      "min": 21.13,
+      "max": 22.13,
+      "n": 3
+    },
+    "gemm_ms": {
+      "median": 35.38,
+      "min": 34.11,
+      "max": 35.41,
+      "n": 3
+    }
+  }
+}
